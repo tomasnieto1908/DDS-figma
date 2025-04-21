@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto - Ritual Artesano</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="container header-container">
+      <a href="index.html" class="logo">Ritual<br>Artesano</a>
+      <nav>
+        <ul>
+          <li><a href="productos.html">Productos</a></li>
+          <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
+          <li><a href="contacto.html" class="active">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1 class="page-title">Formulario de contacto:</h1>
+    
+    <form id="contactForm" class="contact-form">
+      <div class="form-group">
+        <label for="nombre">nombre</label>
+        <div class="input-container">
+          <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre">
+          <button type="button" class="clear-button" data-input="nombre">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="18" y1="6" x2="6" y2="18"></line>
+              <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+        <p class="supporting-text">Texto de apoyo</p>
+      </div>
+
+      <div class="form-group">
+        <label for="email">email</label>
+        <div class="input-container">
+          <input type="email" id="email" name="email" placeholder="Ingresa tu correo">
+          <button type="button" class="clear-button" data-input="email">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="18" y1="6" x2="6" y2="18"></line>
+              <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+        <p class="supporting-text">Texto de apoyo</p>
+      </div>
+
+      <div class="form-group">
+        <label for="mensaje">mensaje</label>
+        <div class="input-container">
+          <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje"></textarea>
+          <button type="button" class="clear-button" data-input="mensaje">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="18" y1="6" x2="6" y2="18"></line>
+              <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+        <p class="supporting-text">Texto de apoyo</p>
+      </div>
+
+      <button type="submit" class="btn-enviar">enviar</button>
+
+      <div class="social-info">
+        <h2>Redes Sociales:</h2>
+        <p>WhatsApp: +54 9 11 2345 6789</p>
+        <p>Instagram: @ritual.artesano</p>
+        <p>Estamos en Buenos Aires, Argentina</p>
+      </div>
+    </form>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
